@@ -1,0 +1,122 @@
+.container {
+  font-size: 2rem;
+}
+
+.dashboard {
+  background-color: #f1faee; /* Light pastel background for a softer feel */
+  color: #1d3557; /* Dark blue text for contrast */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dash-navbar {
+  background-color: #a8dadc; /* Light teal for a fresh, calm look */
+  color: #1d3557; /* Dark blue for text */
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.dash-navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 30px;
+  color: #1d3557; /* Dark blue for logo */
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1d3557; /* Dark blue for visited links */
+}
+
+.dash-navbar .dash-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dash-navbar .dash-links button {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+  background-color: #457b9d; /* Softer blue for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-size: 1rem;
+}
+
+.dash-navbar .dash-links button:hover {
+  background-color: #f1faee; /* Light pastel for hover effect */
+  color: #457b9d; /* Change text color to match hover background */
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.dashboard-content {
+  text-align: center;
+  color: #1d3557; /* Dark blue for consistent text color */
+  margin-top: 3em; /* Added margin-top for spacing */
+}
+
+.logout-btn {
+  padding: 0.5em 1em;
+  background-color: #e63946; /* Bright red for contrast */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-weight: bold;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.logout-btn:hover {
+  background-color: #ff6e85; /* Softer red for hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dash-navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .dash-navbar .logo {
+    margin-bottom: 1em;
+  }
+
+  .dash-navbar .dash-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dash-navbar .dash-links button {
+    margin: 0.5em 0;
+  }
+
+  .logout-btn {
+    margin-right: 0; /* Remove margin-right on small screens */
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+    margin-top: 1em; /* Reduced margin on mobile */
+  }
+}

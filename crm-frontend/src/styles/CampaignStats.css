@@ -1,0 +1,54 @@
+.campaign-stats {
+  margin-top: 1em;
+  padding: 1.5em; /* Increased padding for a more spacious layout */
+  background-color: #F8F9FD; /* Light background for a softer appearance */
+  color: #333333; /* Dark text for readability */
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+  text-align: center; /* Centered content alignment */
+  font-size: 1.2em; /* Slightly larger font for better visibility */
+  max-width: 600px; /* Constrain width for a better layout */
+  margin-left: auto; /* Center the stats section */
+  margin-right: auto; /* Center the stats section */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.campaign-stats:hover {
+  transform: scale(1.02); /* Slight scale effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow effect on hover */
+}
+
+.campaign-stats h2 {
+  font-size: 1.5em; /* Larger font for title emphasis */
+  color: #FF6F61; /* Coral color for emphasis */
+  margin-bottom: 0.8em; /* Added margin for separation */
+}
+
+.campaign-stats p {
+  margin: 0.5em 0;
+  color: #575757; /* Subtle gray for secondary text */
+  font-size: 1.1em; /* Slightly larger font for readability */
+}
+
+.campaign-stats .stats-value {
+  font-weight: bold;
+  font-size: 1.8em; /* Larger value for emphasis */
+  color: #FF6F61; /* Coral color for the stat values */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .campaign-stats {
+    padding: 1em; /* Reduced padding on smaller screens */
+    font-size: 1em; /* Adjust font size for smaller devices */
+    max-width: 90%; /* Allow stats section to take more width */
+  }
+
+  .campaign-stats h2 {
+    font-size: 1.3em; /* Adjust title font size */
+  }
+
+  .campaign-stats .stats-value {
+    font-size: 1.5em; /* Adjust value size for small screens */
+  }
+}

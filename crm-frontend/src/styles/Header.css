@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+
+.header-section {
+  text-align: center;
+  margin-top: 60px; /* Reduced top margin for better spacing */
+  margin-bottom: 40px;
+  padding: 0 20px; /* Added padding for better responsiveness */
+}
+
+.main-heading {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #1d3557; /* Dark blue for a polished, professional look */
+  font-size: 3em; /* Increased font size for prominence */
+  font-weight: 700; /* Bolder text for emphasis */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow for subtle depth */
+  margin-bottom: 10px; /* Added spacing below the heading */
+}
+
+.sub-heading {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #457b9d; /* Softer teal for a calming contrast */
+  font-size: 1.2em; /* Slightly larger for readability */
+  margin-top: 10px;
+  margin-bottom: 20px; /* Extra spacing below the sub-heading */
+  line-height: 1.5; /* Improved line spacing for clarity */
+}
+
+.button-group {
+  margin-top: 30px; /* Increased spacing for a cleaner layout */
+}
+
+.primary-button, .secondary-button {
+  background-color: #a8dadc; /* Soft teal to match the website's theme */
+  color: #1d3557; /* Dark blue for text contrast */
+  border: none;
+  border-radius: 30px; /* Slightly more rounded for a modern look */
+  padding: 12px 25px; /* Increased padding for a more substantial feel */
+  font-size: 1.1em; /* Slightly larger font for better visibility */
+  margin: 0 15px; /* Wider spacing between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Added smooth transition for all effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+.primary-button:hover, .secondary-button:hover {
+  background-color: #f4a261; /* Warm accent color on hover */
+  color: #1d3557; /* Ensures text remains dark for readability */
+  transform: scale(1.1); /* Slight scale effect for a more noticeable hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.5em; /* Smaller heading on mobile */
+  }
+
+  .sub-heading {
+    font-size: 1.1em; /* Slightly smaller sub-heading for mobile */
+  }
+
+  .button-group {
+    margin-top: 20px; /* Reduced spacing for mobile */
+  }
+
+  .primary-button, .secondary-button {
+    font-size: 1em; /* Adjusted font size for smaller screens */
+    padding: 10px 20px; /* Reduced padding for smaller buttons */
+    margin: 0 10px; /* Reduced space between buttons */
+  }
+}

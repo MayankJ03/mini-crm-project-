@@ -1,0 +1,79 @@
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 0 20px; /* Added padding for small screen responsiveness */
+}
+
+.registration-heading {
+  font-size: 2.5em; /* Increased font size for better prominence */
+  margin-bottom: 30px;
+  color: #080A45;
+  text-align: center; /* Centered heading for better alignment */
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Limit the max width for larger screens */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.input-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.registration-input {
+  width: 100%; /* Full width of the form container */
+  max-width: 400px; /* Limit max width for large screens */
+  padding: 15px;
+  border: 1px solid #080A45;
+  border-radius: 5px;
+  font-size: 1em; /* Adjusted font size for readability */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for input focus */
+}
+
+.registration-input:focus {
+  border-color: #C9B8F9; /* Highlight input border on focus */
+  outline: none; /* Removed default outline */
+  box-shadow: 0 0 5px rgba(201, 184, 249, 0.8); /* Subtle shadow effect on focus */
+}
+
+.registration-button {
+  background-color: #080A45;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+.registration-button:hover {
+  background-color: #575757;
+  transform: scale(1.05); /* Added scale effect on hover for better interactivity */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .registration-heading {
+    font-size: 2em; /* Smaller font size for smaller screens */
+  }
+
+  .registration-input {
+    width: 80%; /* Adjust input width on smaller screens */
+  }
+
+  .registration-button {
+    width: 80%; /* Make button full-width on smaller screens */
+  }
+}

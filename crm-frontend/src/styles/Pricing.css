@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+
+.pricing-section {
+  background-color: white;
+  padding: 60px 20px; /* Increased top and bottom padding for more breathing space */
+  color: #080A45;
+  text-align: center;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.topic {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.pricing-heading {
+  font-size: 2.5em; /* Increased size for better prominence */
+  margin-bottom: 20px;
+}
+
+.pricing-subheading {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.pricing-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows for responsiveness on smaller screens */
+}
+
+.pricing-box {
+  background-color: #C9B8F9;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px; /* Adjusted width for visual consistency */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effect */
+}
+
+.pricing-box:hover {
+  transform: translateY(-10px); /* Hover effect for interactivity */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
+
+.pricing-box h4 {
+  margin-top: 0;
+  font-size: 1.3em; /* Slightly larger heading for prominence */
+}
+
+.pricing-box p {
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 2.5em; /* Larger font size for price to stand out */
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.pricing-box ul li {
+  margin: 5px 0;
+}
+
+.pricing-button {
+  background-color: white;
+  color: #080A45;
+  border: 2px solid #080A45;
+  border-radius: 25px;
+  padding: 12px 25px; /* Increased padding for button size */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1em; /* Adjusted button font size */
+  margin-top: 15px;
+}
+
+.pricing-button:hover {
+  background-color: #080A45;
+  color: white;
+  transform: scale(1.05); /* Added slight scale effect on hover for better interactivity */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .pricing-grid {
+    flex-direction: column; /* Stack pricing boxes vertically */
+    gap: 30px; /* Increased gap for better spacing */
+  }
+
+  .pricing-box {
+    width: 100%; /* Make pricing boxes full width on smaller screens */
+  }
+
+  /* Adjusting the font size for smaller screens */
+  .pricing-heading {
+    font-size: 2.2em; /* Slightly smaller heading on mobile */
+  }
+
+  .pricing-subheading {
+    font-size: 1.1em; /* Smaller subheading on mobile */
+  }
+
+  .price {
+    font-size: 2.2em; /* Adjusted price font size for smaller screens */
+  }
+
+  .pricing-button {
+    font-size: 1em; /* Smaller font for the button */
+    padding: 12px 20px; /* Reduced padding for better fit */
+  }
+}

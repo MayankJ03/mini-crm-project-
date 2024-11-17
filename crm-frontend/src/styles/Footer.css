@@ -1,0 +1,87 @@
+.footer {
+    background-color: #f1faee; /* Light pastel background for a soft and approachable footer */
+    color: #1d3557; /* Dark blue text for contrast */
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #a8dadc; /* Lighter teal border for subtle separation */
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
+    gap: 20px; /* Increased gap for better spacing on larger screens */
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #1d3557; /* Dark blue text for better readability */
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px; /* Added spacing between social icons */
+  }
+  
+  .social-links a {
+    color: #457b9d; /* Soft blue for links to align with theme */
+    margin: 0;
+    font-size: 20px; /* Increased font size for better visibility */
+    transition: color 0.3s ease, transform 0.3s ease; /* Added smooth transformation on hover */
+  }
+  
+  .social-links a:hover {
+    color: #ff6e85; /* Soft pink hover effect for links */
+    transform: scale(1.1); /* Subtle scale effect for interaction */
+  }
+  
+  .resume-link {
+    color: #457b9d; /* Consistent color with social links */
+    text-decoration: none;
+    font-size: 16px; /* Slightly larger for improved legibility */
+    font-weight: bold; /* Emphasized for attention */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-link:hover {
+    color: #ff6e85; /* Matches the hover effect for social links */
+    transform: scale(1.05); /* Subtle scaling for attention */
+  }
+  
+  .footer-blink {
+    animation: blink-animation 1s steps(5, start) infinite alternate;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      color: #f4a261; /* Softer, complementary blinking color */
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Stacks content vertically on mobile */
+      text-align: center; /* Center-align text on mobile */
+      gap: 15px; /* Reduce gap for mobile */
+    }
+  
+    .social-links {
+      justify-content: center; /* Center social links on mobile */
+      gap: 10px; /* Reduced gap for smaller screens */
+    }
+  
+    .social-links a {
+      font-size: 18px; /* Slightly smaller icon size for mobile */
+    }
+  
+    .resume-link {
+      font-size: 14px; /* Adjusted font size for mobile */
+    }
+  }
+  

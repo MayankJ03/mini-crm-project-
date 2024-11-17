@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&display=swap');
+
+.info-section {
+  background-color: #f4f4f9; /* Soft off-white background for a clean, light look */
+  padding: 50px 20px; /* Spacing for a more spacious layout */
+  color: #1d3557; /* Dark blue for text, ensuring good readability */
+  text-align: center;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+  border-radius: 10px; /* Rounded corners for a modern feel */
+  margin: 20px auto; /* Centered section */
+  max-width: 900px; /* Ensures text readability with restricted width */
+}
+
+.info-section h2 {
+  font-size: 2.5em; /* Slightly smaller for a cleaner look */
+  margin-bottom: 25px;
+  color: #457b9d; /* Softer blue for a more inviting appearance */
+  font-weight: 700; /* Bold for better emphasis */
+}
+
+.info-section p {
+  font-size: 1.3em; /* Slightly larger text for better readability */
+  line-height: 1.6; /* Improved readability with better line spacing */
+  margin-bottom: 40px;
+  max-width: 750px; /* Controlled width for focused readability */
+  margin-left: auto;
+  margin-right: auto;
+  color: #457b9d; /* Soft teal color for paragraphs */
+}
+
+.info-button {
+  background-color: #a8dadc; /* Soft teal to blend with the light theme */
+  color: #1d3557; /* Dark blue text for readability */
+  border: none;
+  border-radius: 30px; /* More rounded corners for modern look */
+  padding: 12px 25px; /* Increased padding for a more substantial feel */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, outline 0.3s ease;
+  font-size: 1.3em; /* Slightly larger font for emphasis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+}
+
+.info-button:hover {
+  background-color: #f4a261; /* Warm accent color on hover */
+  color: #1d3557; /* Inverted color for better contrast on hover */
+  transform: scale(1.05); /* Slight scaling effect to show interaction */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.info-button:focus {
+  outline: 3px solid #f4a261; /* Add a focus outline for better accessibility */
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    padding: 30px 20px; /* Reduced padding for smaller screens */
+  }
+
+  .info-section h2 {
+    font-size: 2em; /* Slightly smaller heading on mobile */
+  }
+
+  .info-section p {
+    font-size: 1.1em; /* Smaller paragraph text for mobile */
+  }
+
+  .info-button {
+    font-size: 1.1em; /* Adjusted font size for smaller screens */
+    padding: 10px 20px; /* Reduced padding for mobile-friendly buttons */
+  }
+}

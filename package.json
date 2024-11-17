@@ -1,0 +1,18 @@
+{
+  "name": "mini-crm-project",
+  "version": "1.0.0",
+  "description": "Please find the Frontend deployment here : [Netlify Link](https://6668473bce0da20735fe5b06--helpful-cheesecake-37b39f.netlify.app/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd crm-frontend && npm start",
+    "backend": "cd crm-backend && node app.js",
+    "dev": "concurrently -n\"frontend,backend\" -c \"bgBlue,bgYellow\" \"npm run frontend\" \"npm run backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

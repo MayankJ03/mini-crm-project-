@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F1F3F8; /* Soft light background for better contrast */
+  color: #333333; /* Dark text for readability */
+}
+
+.dash-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A6D0FF; /* Soft sky blue background */
+  padding: 10px 20px;
+  color: #333333;
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid #FF6F61; /* Coral border for contrast */
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.logo a {
+  color: #333333; /* Dark link color for navbar */
+  text-decoration: none;
+}
+
+.dash-navbar .logout-btn {
+  background-color: #FF6F61; /* Coral button for visibility */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dash-navbar .logout-btn:hover {
+  background-color: #F8B8B8; /* Light coral hover effect */
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.campaigns {
+  background-color: #FFFFFF; /* White background for campaigns */
+  color: #333333; /* Dark text for readability */
+  padding: 2em;
+  border-radius: 10px;
+  margin: 2em auto;
+  max-width: 90%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for a soft look */
+  overflow: hidden;
+}
+
+.campaign-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.campaign-form label {
+  margin: 0.5em 0;
+  font-weight: bold;
+  font-size: 1em;
+  width: 100%;
+  text-align: left;
+  max-width: 400px;
+  color: #575757; /* Soft gray label color */
+}
+
+.campaign-form input,
+.campaign-form textarea {
+  padding: 0.75em;
+  margin-top: 0.5em;
+  border: 1px solid #D3CCE3; /* Light lavender border for input fields */
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: #E5D2CE; /* Soft pastel background for inputs */
+  color: #333333; /* Dark text for clarity */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.campaign-form input:focus,
+.campaign-form textarea:focus {
+  border-color: #FF6F61; /* Focused border color */
+  outline: none;
+}
+
+.campaign-form button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  background-color: #FF6F61; /* Coral button for clarity */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.campaign-form button:hover {
+  background-color: #F8B8B8; /* Lighter coral for hover */
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.campaign-list {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.campaign-item {
+  border: 1px solid #FF6F61; /* Border with coral color */
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 0.5em 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: #F8F9FD; /* Light background for campaign items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-sizing: border-box;
+}
+
+.campaign-item p {
+  margin: 0.5em 0;
+  font-size: 1em;
+  color: #333333; /* Dark text for readability */
+}
+
+.campaign-item p:first-child {
+  font-weight: bold;
+  font-size: 1.2em; /* Slightly larger for emphasis */
+  color: #FF6F61; /* Coral accent for the first paragraph */
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+  .dash-navbar {
+    flex-direction: column; /* Stack navbar elements vertically on small screens */
+    padding: 10px;
+  }
+
+  .campaigns {
+    margin: 1.5em auto; /* Adjusted margin for smaller screens */
+    padding: 1.5em; /* Reduced padding for compact screens */
+  }
+
+  .campaign-form {
+    max-width: 100%; /* Ensure form takes full width on smaller screens */
+  }
+
+  .campaign-form input,
+  .campaign-form textarea,
+  .campaign-form button {
+    width: 100%; /* Make inputs and button take full width */
+  }
+
+  .campaign-item {
+    width: 100%; /* Ensure campaign items take full width on smaller screens */
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+  }
+}

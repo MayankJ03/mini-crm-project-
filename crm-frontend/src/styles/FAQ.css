@@ -1,0 +1,90 @@
+.faq-section {
+    display: flex;
+    background-color: #f1faee; /* Light pastel background for a soft, airy feel */
+    color: #1d3557; /* Dark blue text for contrast */
+    font-family: 'Bricolage Grotesque', sans-serif;
+    padding: 20px; /* Added padding for better spacing */
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    gap: 20px; /* Space between sections */
+}
+  
+.left-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #a8dadc; /* Soft teal for a soothing effect */
+    border-radius: 10px; /* Rounded corners for smooth visuals */
+    margin-right: 20px; /* Space between left and right sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+  
+.left-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #457b9d; /* Lighter blue for heading emphasis */
+}
+  
+.left-section p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Improved line spacing for readability */
+    color: #1d3557; /* Dark blue text for contrast */
+}
+  
+.right-section {
+    flex: 3;
+    padding: 40px;
+    background-color: #f1faee; /* Changed to match the footer background */
+    border-radius: 10px; /* Rounded corners for consistency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+  
+.faq-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #a8dadc; /* Soft teal background for individual items */
+    border-radius: 8px; /* Rounded edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+  
+.faq-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+}
+  
+.faq-item h3 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    color: #457b9d; /* Light blue for headings */
+}
+  
+.faq-item p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Improved readability */
+    color: #1d3557; /* Dark blue text for consistency */
+}
+  
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .faq-section {
+        flex-direction: column; /* Stack sections vertically on small screens */
+        padding: 10px;
+    }
+  
+    .left-section, .right-section {
+        width: 100%; /* Make sections full-width on mobile */
+        margin-right: 0; /* Remove right margin */
+    }
+  
+    .faq-item {
+        margin-bottom: 20px; /* Reduced margin on mobile */
+        padding: 15px; /* Reduced padding on mobile */
+    }
+  
+    .left-section h2 {
+        font-size: 1.8em; /* Slightly smaller heading on mobile */
+    }
+  
+    .faq-item h3 {
+        font-size: 1.5em; /* Slightly smaller FAQ item heading */
+    }
+}

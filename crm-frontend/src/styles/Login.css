@@ -1,0 +1,115 @@
+#logo-link {
+    text-decoration: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f9; /* Soft background color for contrast */
+    padding: 40px 20px; /* Added padding for spacing */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.login-heading {
+    font-size: 32px; /* Larger text for emphasis */
+    text-align: center;
+    color: #1d3557; /* Darker blue for better contrast */
+    font-weight: bold; /* Stronger heading style */
+    margin-bottom: 20px; /* Space between heading and form */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Set max-width for better layout */
+    background-color: white; /* White background for the form */
+    padding: 30px; /* Padding for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.input-container {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-input {
+    width: 100%; /* Full width for better input alignment */
+    padding: 15px;
+    border: 1px solid #080A45;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1rem; /* Slightly larger font for easier reading */
+    color: #1d3557; /* Darker text for readability */
+    background-color: #f9f9f9; /* Light background for input fields */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.login-input:focus {
+    border-color: #f4a261; /* Soft accent color for focus state */
+    outline: none; /* Remove default outline */
+}
+
+.login-button {
+    background-color: #080A45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em; /* Slightly larger font size */
+    width: 100%; /* Full-width button */
+    margin-top: 20px; /* Space above button */
+}
+
+.login-button:hover {
+    background-color: #5a5a8c; /* Lighter shade for hover effect */
+    transform: scale(1.05); /* Slight scaling effect for hover */
+}
+
+.login-button:focus {
+    outline: 3px solid #f4a261; /* Add a focus outline for accessibility */
+}
+
+.create-account-text {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #1d3557; /* Matching color with headings */
+}
+
+.create-account-text a {
+    color: #080A45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.create-account-text a:hover {
+    color: #f4a261; /* Hover effect for links */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .login-heading {
+        font-size: 28px; /* Smaller font size for the heading */
+    }
+
+    .login-form {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+
+    .login-input {
+        padding: 12px; /* Reduced padding for smaller screens */
+    }
+
+    .login-button {
+        padding: 12px 25px; /* Reduced padding for smaller screens */
+    }
+}

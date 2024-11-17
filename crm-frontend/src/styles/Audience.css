@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F9FD; /* Light background for a clean feel */
+  color: #333333; /* Dark text for readability */
+}
+
+.dash-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B9E1F5; /* Light blue for navbar */
+  padding: 10px 20px;
+  color: #333333;
+  position: sticky;
+  top: 0;
+  border-bottom: 3px solid #FF6F61; /* Coral border for contrast */
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.dash-navbar .logout-btn {
+  background-color: #FF6F61; /* Coral button for logout */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dash-navbar .logout-btn:hover {
+  background-color: #F8B8B8; /* Lighter coral on hover */
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.audience {
+  background-color: #FFFFFF; /* White background for clarity */
+  color: #333333; /* Dark text for readability */
+  padding: 2em;
+  border-radius: 10px;
+  margin: 2em auto;
+  max-width: 90%;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow for a soft look */
+  overflow: hidden;
+}
+
+.audience-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.audience-form label {
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 100%;
+  text-align: left;
+  color: #575757; /* Soft gray for the labels */
+}
+
+.audience-form input {
+  padding: 0.75em;
+  margin-top: 0.5em;
+  border: 1px solid #D3CCE3; /* Light lavender border for input fields */
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: #E5D2CE; /* Light pastel background for input fields */
+  color: #333333; /* Dark text for clarity */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.audience-form input:focus {
+  border-color: #FF6F61; /* Highlight input border on focus */
+  outline: none;
+}
+
+.audience-form button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  background-color: #FF6F61; /* Coral button for call-to-action */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.audience-form button:hover {
+  background-color: #F8B8B8; /* Lighter coral on hover */
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.audience-size {
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #F4A261; /* Soft orange for emphasis */
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+  .dash-navbar {
+    flex-direction: column; /* Stack navbar elements vertically on small screens */
+    padding: 10px;
+  }
+
+  .audience {
+    margin: 1.5em auto; /* Adjusted margin for smaller screens */
+    padding: 1.5em; /* Reduced padding for compact screens */
+  }
+
+  .audience-form {
+    max-width: 100%; /* Ensure form takes full width on smaller screens */
+  }
+
+  .audience-form input,
+  .audience-form button {
+    width: 100%; /* Make inputs and button take full width */
+  }
+}
